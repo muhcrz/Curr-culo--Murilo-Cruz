@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murilo Cruz Dev</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./img/principal.jpg">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+    <!-- Estilos importados-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Fontes personalizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Meta tag para descrição do site -->
+  <meta name="description" content="Meu Portfólio - MuriloCruz Dev">
+</head>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <ul class="navlist">
+      <li class="active"><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  
+    <div>
+      <ul class="social-network">
+        <li>
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/murilo-henrique-cruz-0ba931360/" target="_blank">
+            <figure id="fig1"></figure>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/muhcrz" target="_blank">
+            <figure id="fig2"></figure>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Ícone do menu mobile -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção Home -->
+    <section id="home" class="home">
+      <div class="home-presentation">
+        <p class="my-name">meu nome é</p>
+        <h1 id="name">Murilo Cruz</h1>
+        <h1 id="last-name">DEV</h1>
+        <h3><p>sou</p> Desenvolvedor de Sistemas <span><strong>|</strong> Front-End e Back-end</span></h3>
+        <div class="button">
+          <a href="#projects" class="project-button">Projetos</a>
+          <a href="#contact" class="contact-button">Contato</a>
+        </div>
+      </div>
+      <img class="home-mac" src="./img/main.png" alt="laptop">
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./img/perfil.png" alt="">
+      </div>
+      <div class="about-text">
+        <h2><span>SOBRE</span> MIM</h2>
+        <p>
+          Tenho 17 anos e estou me formando como desenvolvedor de sistemas, sempre buscando aprender coisas novas e evoluir na área da tecnologia. 
+          Minha jornada na programação começou pela curiosidade de entender como sites, aplicativos e sistemas funcionam por trás das telas.
+        </p>
+        <p>
+          Como desenvolvedor de sistemas, sou uma pessoa curiosa, dedicada e sempre disposto a aprender, explorando diferentes linguagens como e tecnologias para desenvolver projetos e 
+          melhorar minhas habilidades. Gosto de transformar ideias em soluções funcionais, criando sistemas que sejam úteis, organizados 
+          e bem estruturados.
+        </p>
+        <button class="button-cv">
+          <a href="./assets/curriculo-front-end.pdf" download="CV - MuriloCruz Dev" class="btn-cv"> Download CV</a>
+        </button>
+      </div>
+      <img src="./img/balls.svg" alt="balls" class="balls">
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="skills" id="skills">
+      <div class="line"></div>
+      <div class="tech">
+        <h2>TECNOLOGIAS</h2>
+        <div class="techs">
+          <div class="card">
+            <img src="./img/html-icon.svg" alt="icone html">
+            <p>HTML</p>
+          </div>
+          <div class="card">
+            <img src="./img/css-icon.svg" alt="icone css">
+            <p>CSS</p>
+          </div>
+          <div class="card">
+            <img src="./img/js-icon.svg" alt="icone javascript">
+            <p>JavaScript</p>
+          </div>
+          <div class="card">
+            <img src="./img/python-icon.svg" alt="icone python">
+            <p>Python</p>
+          </div>
+          <div class="card">
+            <img src="./img/sql-icon.svg" alt="icone sql">
+            <p>SQL</p>
+          </div>
+          <div class="card">
+            <img src="./img/git-icon.svg" alt="icone git">
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="tool">
+        <h2>FERRAMENTAS</h2>
+        <div class="tools">
+          <div class="card">
+            <img src="./img/github-icon.svg" alt="icone github">
+            <p>GitHub</p>
+          </div>
+          <div class="card">
+            <img src="./img/vs-code-icon.svg" alt="icone vscode">
+            <p>VSCode</p>
+          </div>
+          <div class="card">
+            <img src="./img/figma-icon.svg" alt="icone figma">
+            <p>Figma</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meus <span>Projetos</span></h2>
+      </div>
+      <!-- Container do carrossel -->
+      <div class="carousel-container">
+        <!-- Botões de navegação -->
+        <button class="carousel-button prev" aria-label="Projeto anterior">&#10094;</button>
+        <button class="carousel-button next" aria-label="Próximo projeto">&#10095;</button>
+        <!-- Slides do carrossel -->
+        <div class="carousel-slides">
+          <div class="carousel-slide active">
+          <a href="https://github.com/muhcrz/Gr2sprint" target="_blank">
+         <div class="row">
+          <img src="./img/projeto1.png" alt="print pagina de login">
+           <div class="layer">
+          <h5>Aplicativo Denúncia-Estado SP</h5>
+          <p>Esse repositório possui um aplicativo criado para facilitar denúncias da população no estado de São Paulo. Nele utilizo apenas HTML, CSS e JS.</p>
+           </div>
+          </div>
+           </a>
+            </div>
+          <!-- Slide 2 - Moto -->
+          <div class="carousel-slide">
+          <a href="https://github.com/muhcrz/ExpoMoto--Landing-Page" target="_blank">
+          <div class="row">
+          <img src="./img/projeto2.png" alt="print cronometro">
+          <div class="layer">
+        <h5>Landing Page- ExpoMotos</h5>
+        <p>Página Inicial de um site de motos utilizado HTML, CSS e JS.</p>
+         </div>
+        </div>
+         </a>
+        </div>
+          <!-- Slide 3 - Formulário -->
+          <div class="carousel-slide">
+          <a href="https://github.com/henrique4321/requisi--es-api" target="_blank">
+           <div class="row">
+          <img src="./img/projeto3.png" alt="pagina de form">
+          <div class="layer">
+        <h5>Site de Filmes</h5>
+        <p>Desenvolvido com a API pública de filmes. Nele foi utilizado HTML, CSS e JS</p>
+         </div>
+         </div>
+        </a>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>Entre em <span>contato</span></h2>
+        </div>
+      </div>
+      <div class="contact-form">
+        <!-- Serviço gratuito (formsubmit) que envia os dados para o e-mail descrito abaixo -->
+        <form id="contactForm" action="https://formsubmit.co/cruzmurilohenrique@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Digite seu nome" required>
+          <input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+          <input type="hidden" name="_captcha" value="false">
+          <textarea type="text" name="text" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
+          <br>
+          <input type="submit" value="Enviar" class="submit" required>
+        </form>
+        <!-- Mensagem de agradecimento (Após enviar formulário)-->
+        <div id="thankYouMessage" class="thank-you-message">
+          Obrigado! Aguarde nosso retorno!
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <section class="end">
+    <div class="last-text">
+      <p>by Murilo Cruz Dev <img src="./img/bussola.svg" alt=""> Alguns direitos resevados.</p>
+    </div>
+
+    <div class="top">
+      <!-- Seta adicionada do serviço: boxicons -->
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
